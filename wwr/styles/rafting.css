@@ -1,12 +1,7 @@
 :root {
     --primary-color: #1a3a4a;
-    /* dark navy blue - from screenshot */
-    --secondary-color: #f4a261;
-    /* warm accent */
     --accent1-color: #0d2a54;
-    /* hero overlay blue */
     --accent2-color: #e9c46a;
-    /* light gold */
     --heading-font: "Georgia", "Times New Roman", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
