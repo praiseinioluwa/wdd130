@@ -1,5 +1,4 @@
 :root {
-    --primary-color: #1a3a5f;
     --secondary-color: #f7941e;
     --accent1-color: #0e3150;
     --accent2-color: #ffffff;
@@ -147,6 +146,8 @@ header nav a:hover {
     object-fit: cover;
 
     border: 1px solid var(--accent1-color);
+
+    float: right;
 }
 
 /* ---------- GENERAL SECTIONS ---------- */
