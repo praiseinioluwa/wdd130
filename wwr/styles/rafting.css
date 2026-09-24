@@ -1,10 +1,14 @@
 :root {
-    --primary-color: #1a3a4a;
-    --accent1-color: #0d2a54;
-    --accent2-color: #e9c46a;
-    --heading-font: "Georgia", "Times New Roman", serif;
+    --primary-color: #1a3a5f;
+    --secondary-color: #f7941e;
+    --accent1-color: #0e3150;
+    --accent2-color: #ffffff;
+
+    --heading-font: "Arial Black", Arial, sans-serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
+
+/* ---------- RESET ---------- */
 
 * {
     margin: 0;
@@ -12,10 +16,15 @@
     box-sizing: border-box;
 }
 
+/* ---------- BODY ---------- */
+
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: #111;
+    background-color: #ffffff;
 }
+
+/* ---------- HEADER ---------- */
 
 header,
 main,
@@ -24,106 +33,172 @@ footer {
     margin: 0 auto;
 }
 
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
+/* ---------- HEADER ---------- */
 
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
-
-/* Header */
 header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
     display: grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 180px 1fr;
     align-items: center;
+    padding: 20px 10px;
+    border-bottom: 1px solid #ddd;
 }
 
-header img {
-    width: 120px;
+header > img {
+    width: 140px;
     height: auto;
 }
 
-nav ul {
+/* ---------- NAVIGATION ---------- */
+
+header nav {
     display: flex;
-    list-style: none;
-    justify-content: space-around;
+    justify-content: flex-end;
+    gap: 35px;
 }
 
-nav a {
-    color: var(--accent2-color);
+header nav a {
+    color: var(--primary-color);
     text-decoration: none;
     font-weight: bold;
+    padding: 10px;
 }
 
-/* Hero with Overlays */
+header nav a:hover {
+    color: var(--secondary-color);
+}
+
+/* ---------- HEADINGS ---------- */
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+}
+
+h1 {
+    color: var(--accent2-color);
+}
+
+h2 {
+    color: var(--accent2-color);
+}
+
+/* ---------- HERO ---------- */
+
 .hero {
     position: relative;
+    margin-top: 20px;
 }
 
-.hero img {
+.hero > img {
     display: block;
     width: 100%;
     height: auto;
 }
 
+/* ---------- HERO TITLE ---------- */
+
 .hero h1 {
     position: absolute;
     top: 20px;
+    left: 0;
     width: 100%;
-    padding: 16px;
+    padding: 14px;
     text-align: center;
-    opacity: 0.85;
-    background-color: var(--accent1-color);
-    color: #fff;
+    background-color: var(--primary-color);
+    opacity: 0.9;
 }
+
+/* ---------- HERO ARTICLE ---------- */
 
 .hero article {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    background-color: rgba(13, 42, 84, 0.8);
-    color: white;
+    left: 30px;
+    right: 30px;
+    bottom: 40px;
+
     padding: 16px;
+
+    background-color: rgba(14, 49, 80, 0.85);
+    color: white;
+
+    min-height: 110px;
 }
 
 .hero article img {
     float: right;
     width: 125px;
-    margin-left: 12px;
-    border-radius: 4px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    height: 90px;
+    object-fit: cover;
+    margin-left: 20px;
+    border: 2px solid white;
+}
+
+.hero article p {
+    line-height: 1.4;
+    padding: 0;
+    margin: 0;
+}
+
+/* ---------- SECTIONS ---------- */
+
+section {
+    margin-top: 30px;
 }
 
 section h2 {
     background-color: var(--primary-color);
-    color: white;
     text-align: center;
-    padding: 12px;
+    padding: 18px;
+}
+
+section p {
+    padding: 18px 15px;
+    line-height: 1.4;
+}
+
+/* ---------- HISTORY ---------- */
+
+.history {
+    margin-top: 30px;
+}
+
+/* ---------- ADVENTURE ---------- */
+
+.adventure {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 1px solid #ccc;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ---------- SOCIAL MEDIA ---------- */
+
+.socialmedia {
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }
 
 .socialmedia a {
     text-decoration: none;
 }
 
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid #ccc;
-    margin-top: 20px;
-}
-
-footer .socialmedia img {
-    width: 32px;
-    margin: 0 5px;
+.socialmedia img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
 }
