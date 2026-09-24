@@ -115,12 +115,9 @@ h2 {
     left: 30px;
     right: 30px;
     bottom: 40px;
-
     padding: 16px;
-
-    background-color: rgba(14, 49, 80, 0.85);
-    color: white;
-
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
     min-height: 110px;
 }
 
