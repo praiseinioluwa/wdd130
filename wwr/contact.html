@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Contact Rapids Adventure Rafting for reservations, general inquiries, trip information, and customer support. Get directions, email us, or send a message.">
+    <meta name="author" content="Praise Inioluwa">
+    <title>Contact Us | Rapids Adventure Rafting</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Rapids Adventure Rafting logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Company Info -->
+        <section class="contact-header">
+            <h1>Contact Us - Rapids Adventure Rafting</h1>
+            <address>
+                <p>Callari estate, by Samuel Adedoyin St, Eti-Osa, Lekki</p>
+                <p>Lagos, Nigeria</p>
+                <p><a href="tel:+2349082832195">+234 908-2832-195</a></p>
+                <p><a href="mailto:boatcruiselagos@gmail.com">boatcruiselagos@gmail.com</a></p>
+            </address>
+        </section>
+
+        <!-- Map + Form - matches wireframe -->
+        <section class="contact-content">
+            <!-- Google Map -->
+            <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.724478745278!2d3.433129773562376!3d6.42943089356164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf5c7cda8803d%3A0x1f056b1bebeae4d3!2sBoat%20Cruise%20Lagos!5e0!3m2!1sen!2sng!4v1715000000000!5m2!1sen!2sng"
+                  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="form-container">
+                <form id="contactForm" method="post" action="#">
+                    <div class="form-group">
+                        <label for="fullname">Name</label>
+                        <input type="text" id="fullname" name="fullname"
+                          placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email"
+                          required>
+                    </div>
+
+                    <fieldset>
+                        <legend>Message Purpose</legend>
+                        <div class="radio-group">
+                            <input type="radio" id="general" name="purpose" value="general" checked>
+                            <label for="general">General Inquiry</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="reservation" name="purpose" value="reservation">
+                            <label for="reservation">Reservation Question</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="website" name="purpose" value="website">
+                            <label for="website">Website Suggestion</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6"
+                          placeholder="Type your message here..." required></textarea>
+                    </div>
+
+                    <label class="checkbox" for="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        Please subscribe me to the monthly newsletter
+                    </label>
+
+                    <button type="submit">Get in Touch!</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Employee Profiles - Required -->
+        <section class="employee-section">
+            <h2>We Are Here to Serve You</h2>
+            <div class="employees">
+                <figure>
+                    <img src="images/grace-adeyemi.png" alt="Grace Adeyemi, Operations Manager">
+                    <figcaption>Grace Adeyemi - Operations Manager</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/michael-okpara.png" alt="Michael Okpara, Lead River Guide">
+                    <figcaption>Michael Okpara - Lead River Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/sarah-john.png"
+                      alt="Sarah John, Customer Service Representative">
+                    <figcaption>Sarah John - Customer Service Representative</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rapids Adventure Rafting | Praise Inioluwa</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/twitter.png" alt="X (Twitter)">
+            </a>
+        </nav>
+    </footer>
+
+    <div id="successOverlay" class="overlay hidden">
+        <div class="overlay-box">
+            <h2>✓ Message Received</h2>
+            <p>Thank you for contacting Rapids Adventure Rafting.</p>
+            <p>We've received your inquiry. Please check your email inbox (and your spam folder if
+                necessary) for our confirmation message.</p>
+            <p id="countdown">This window will close in 10 seconds.</p>
+        </div>
+    </div>
+
+    <script src="scripts/contact.js"></script>
+</body>
+
+</html>
